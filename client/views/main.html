@@ -10,19 +10,3 @@
 		{{> Teams}}
 	</div>
 </template>
-
-<template name="Header">
-	<h1>Copa Papa Francisco</h1>
-	<input type="hidden" name="game-id" value="{{game._id}}">
-	{{#if editFecha}}
-		<h2><input type="text" value="{{game.date}}" data-action="newFecha"> <span class="edit" data-action="editFecha">✍</span></h2>
-	{{else}}
-		<h2>{{game.date}} <span class="edit" data-action="editFecha">✍</span></h2>
-	{{/if}}
-	
-	{{#if editAddress}}
-		<h3><input type="text" value="{{game.address}}" data-action="newAddress"> <span class="edit" data-action="editAddress">✍</span></h3>
-	{{else}}
-		<h3>{{game.address}} <span class="edit" data-action="editAddress">✍</span></h3>
-	{{/if}}
-</template>
