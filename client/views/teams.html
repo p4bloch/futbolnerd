@@ -1,0 +1,33 @@
+<template name="Teams">
+	<div class="pure-g">
+		<div class="pure-u-1-2">
+			<h2>Equipo 1</h2>
+			{{> Team1}}
+		</div>
+		<div class="pure-u-1-2">
+			<h2>Equipo 2</h2>
+			{{> Team2}}
+		</div>
+	</div>
+</template>
+
+<template name="Team1">
+	<div class="team1">
+		{{#each players}}
+			{{> PlayerInTeam}}
+		{{/each}}
+	</div>
+</template>
+<template name="Team2">
+	<div class="team2">
+		{{#each players}}
+			{{> PlayerInTeam}}
+		{{/each}}
+	</div>
+</template>
+
+<template name="PlayerInTeam">
+	<div class="playerInTeam">
+		{{name}} <span class="switch">⇆</span>
+	</div>
+</template>

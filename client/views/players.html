@@ -1,0 +1,14 @@
+<template name="Players">
+	<ul class="players">
+	{{#each players}}
+		{{> Player}}
+	{{/each}}
+	</ul>
+</template>
+
+<template name="Player">
+	<li>
+	{{name}}
+	<span class="delete" data-action="delete">X</span>
+	</li>
+</template>
