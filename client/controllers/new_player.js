@@ -26,10 +26,6 @@ function addPlayer (name) {
 	});
 }
 
-function cleanInput (input) {
-	input.value = '';
-}
-
 function teamWithLessPlayers() {
 	team1 = Players.find({'team': 1}).count();
 	team2 = Players.find({'team': 2}).count();
