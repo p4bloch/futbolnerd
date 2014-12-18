@@ -8,5 +8,5 @@ scrollChat = function(){
 }
 
 Template.registerHelper('dateToHuman', function(date){
-	return moment(date).format('D/M h:mm');
+	return moment(date).format('D/M H:mm');
 });
